@@ -6,7 +6,9 @@ DEBUG_FLAGS = -g3
 
 SRC_DIR = src/
 SRC_FILES = $(addprefix $(SRC_DIR), \
-			main.cpp)
+			main.cpp \
+			Animal.cpp \
+			Dog.cpp)
 
 OBJ_DIR = obj/
 OBJ_FILES = $(addprefix $(OBJ_DIR), $(notdir $(SRC_FILES:.cpp=.o)))

@@ -1,5 +1,7 @@
 #include "Array.hpp"
 #include "qolMacros.hpp"
+#include "Animal.hpp"
+#include "Dog.hpp"
 
 int main(void)
 {
@@ -35,5 +37,12 @@ int main(void)
 	for (unsigned int i = 0; i < f3.size(); i++)
 	{
 		println(f3[i]);
+	}
+
+	Array<Dog> d1;
+	Array<Dog> d2(5);
+	for (unsigned int i = 0; i < d2.size(); i++)
+	{
+		d2[i].makeSound();
 	}
 }
